@@ -1,13 +1,13 @@
 // Form Validation + Button Loading Effect
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector(".login");
   const emailInput = document.getElementById("Email");
   const passInput = document.getElementById("pass");
   const btn = document.querySelector(".btn");
 
-  form.addEventListener("submit", function(e) {
-    e.preventDefault(); 
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
 
     const email = emailInput.value.trim();
     const password = passInput.value.trim();
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
       return;
     }
 
-    if (password.length < 6) {
+    if (password.length < 7) {
       alert("Password must be at least 6 characters long.");
       return;
     }
@@ -37,14 +37,11 @@ document.addEventListener("DOMContentLoaded", function() {
     btn.disabled = true;
     btn.innerHTML = `<i class="fa fa-spinner fa-spin"></i> try to login`;
 
-    // Simulate a request delay (2 seconds)
-    setTimeout(() => {
-      alert("Login successful!");
-      // Here you can redirect to another page
-      // window.location.href = "home.html";
+    await form.submit();
 
-      btn.innerHTML = "Login";
-      btn.disabled = false;
-    }, 2000);
+    // Simulate a request delay (2 seconds)
+
+    btn.innerHTML = "Login";
+    btn.disabled = false;
   });
 });

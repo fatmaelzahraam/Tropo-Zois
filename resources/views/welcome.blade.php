@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tropo Zois | Log in</title>
 
-    <link rel="shortcut icon" href="{{ asset('images/lowizp.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('lowizp.png') }}" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
           integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    @vite(['resources/css/login.css', 'resources/js/app.js'])
+    @vite(['resources/css/login.css', 'resources/js/app.js', 'resources/js/login.js'])
 </head>
 
 <body>
@@ -27,16 +27,16 @@
 
     {{-- Left logo section --}}
     <div class="left-logo">
-        <img class="lft-lo" src="{{ asset('images/green logo.png') }}" alt="logo">
+        <img class="lft-lo" src="{{ asset('greenlogo.png') }}" alt="logo">
     </div>
 
     <div class="wrapper">
-        <form class="login" action="{{ route('login') }}" method="POST">
+        <form class="login" action="login" method="POST">
             @csrf
 
             {{-- Top header logo --}}
             <div class="head">
-                <img class="image" src="{{ asset('images/brlogo.png') }}" alt="logo">
+                <img class="image" src="{{ asset('brlogo.png') }}" alt="logo">
                 <h4>Login</h4>
             </div>
 
@@ -60,7 +60,7 @@
 
             {{-- Forget password link --}}
             <div class="remember-forget">
-                <a href="{{ route('password.request') }}">Forget password?</a>
+                <a href="#">Forget password?</a>
             </div>
 
             {{-- General error message --}}
@@ -89,12 +89,11 @@
             {{-- Register link --}}
             <div class="register-link">
                 <p>Don't have an account?
-                    <a href="{{ route('register') }}">Sign Up</a>
+                    <a href="#">Sign Up</a>
                 </p>
             </div>
         </form>
     </div>
 
-    <script src="{{ asset('js/login.js') }}"></script>
 </body>
 </html>
