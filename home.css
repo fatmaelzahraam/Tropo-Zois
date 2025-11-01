@@ -1,0 +1,135 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Body Style */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background:#1C352D;
+  overflow: hidden;
+}
+header
+{
+    height: 100vh;
+}
+nav{
+    padding-right: 0;
+    background-color: #A8BBA3;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 200px;
+    margin-right: 200px;
+    
+}
+ul li 
+{
+    display: flex;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 20px;
+    color: black;
+}
+li a
+{
+    text-decoration: none;
+    color:black;
+    list-style: none;
+}
+nav .rightnavn
+{
+    display: flex;
+    align-items: center;   
+}
+.rightnav img{
+    width: 35px;
+    height: 35px;
+}
+.rightnav a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+nav .rightnav button
+{
+    margin-left: 40px;
+    width: 100px;
+    font-size: 16px;
+    height: 40px;
+    color: white;
+    background-color: #6A8F78;
+    border: 2px solid #6A8F78;
+    border-radius: 30px;
+}
+nav .logo
+{
+    width: 300px;
+    height: 199px;
+    
+}
+ .logo img
+{
+    width: 250px;
+    height: 199px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.container .sec1
+{
+    width: 50%;
+    padding: 50px;
+    margin-top: 100px;
+}
+.container .sec1 h3
+{
+    color: white;
+    font-size: 33px;
+    font-weight: 100;
+
+}
+.container .sec1 h1{
+    margin-top: 20px;
+    color: white;
+    font-size: 100px;
+}
+.container .sec1 p{
+    color: white;
+    font-size: 14px;
+    font-family: 'Libre Caslon Display';
+}
+.container .sec2
+{
+    display: flex;
+   width: 50%; 
+   padding: 0;
+}
+.sec2 .manpic
+{
+    z-index: -1;
+    width: 400px;
+    height: 600px;
+}
+.sec2 .womanpic
+{
+    width: 350px;
+    height: 600px;
+}
+
