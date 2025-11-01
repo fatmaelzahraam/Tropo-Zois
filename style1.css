@@ -1,0 +1,133 @@
+*{
+     box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body { margin: 0; font-family: sans-serif; }
+
+.container {
+    display: flex;
+    min-height: 100vh; 
+}
+.left {
+    width: 35%; 
+    background-color: #B6CEB4E8; 
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.left img {
+    max-width: 600px;
+    margin-bottom: 130px;
+    text-align: center;
+justify-content: center;
+}
+.right {
+    width: 65%; 
+    background-color: #1C352D; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.right img {
+    max-width: 100px;
+}
+.right h1 {
+    color: #FCFFFF;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+.right form {
+    gap: 5px;
+    width: 372;
+   height: 39;
+   top: 482px;
+  margin-left: 80px;
+  margin-right: 200px;
+}
+
+.right label {
+    color: #ECF1F1;
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+.right input[type="text"],
+.right input[type="email"],
+.right input[type="password"] {
+    background-color: #A8BBA3;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    padding: 12px 15px;
+    color: #191818;
+    font-size: 1em;
+    width: calc(100% - 30px); 
+    font-family: Inter;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+.right input::placeholder {
+    color: #191818;
+    font-family: Inter;
+font-weight: 600;
+font-style: Semi Bold;
+font-size: 15px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+.or-divider {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+  color: #ECF1F1;
+  font-size: 12px;
+}
+
+.or-divider .line {
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.or-divider span {
+  padding: 0 15px;
+}
+.right p {
+    color: #ECF1F1;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 15px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+.login-link {
+    color: #E9B4B4;
+    text-decoration: none;
+    font-weight: bold;
+}
+button {
+    background-color: #B6CEB4;
+    color: #000000;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 150px;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end; 
+}
